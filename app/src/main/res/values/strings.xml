@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bello</string>
+    <string name="clubs">Clubs</string>
+    <string name="Calender">Calender</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
