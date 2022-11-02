@@ -19,8 +19,8 @@ public class VP_Adapter extends FragmentStateAdapter{
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        if(position==1)return new ClubFragment();
-        else return new CalenderFragment();
+        if(position==1)return new CalenderFragment();
+        else return new ClubFragment();
     }
 
     @Override
