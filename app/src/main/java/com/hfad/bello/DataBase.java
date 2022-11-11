@@ -34,8 +34,7 @@ public class DataBase extends SQLiteOpenHelper {
                 "CLUBS TEXT," +
                 "UPCOMING_CLUB_EVENTS TEXT," +
                 "UPCOMING_CLUB_EVENTS_DATE NUMERIC," +
-                "EVENTS_ATTENDED TEXT," +
-                "ADMIN )");
+                "ADMIN TEXT)");
 
 
 
@@ -48,7 +47,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     }
 
-    public void inserUsertData(String Email,String name,String password)
+    public void insertUsertData(String Email,String name,String password)
     {
         SQLiteDatabase sqLiteDatabase=this.getWritableDatabase();
         ContentValues contentValues=new ContentValues();
@@ -57,4 +56,21 @@ public class DataBase extends SQLiteOpenHelper {
         contentValues.put("PASSWORD",password);
         sqLiteDatabase.insert(nameDatabase,null,contentValues);
     }
+
+    public void insertAdmin(String clubName)
+    {
+        SQLiteDatabase sqLiteDatabase=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put("ADMIN",clubName);
+        sqLiteDatabase.insert(nameDatabase,null,contentValues);
+    }
+
+    public void insertClubs(String clubName)
+    {
+        SQLiteDatabase sqLiteDatabase=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put("CLUBS",clubName);
+        sqLiteDatabase.insert(nameDatabase,null,contentValues);
+    }
+
 }

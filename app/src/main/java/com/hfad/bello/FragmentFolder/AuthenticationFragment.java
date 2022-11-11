@@ -45,7 +45,7 @@ public class AuthenticationFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 dataBase=new DataBase(getContext());
-                dataBase.inserUsertData(email.getText().toString(),name.getText().toString(),password.getText().toString());
+                dataBase.insertUsertData(email.getText().toString(),name.getText().toString(),password.getText().toString());
                 launchMainActivity();
             }
         });

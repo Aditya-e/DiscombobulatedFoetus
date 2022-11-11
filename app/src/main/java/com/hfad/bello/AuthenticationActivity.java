@@ -32,7 +32,6 @@ public class AuthenticationActivity extends AppCompatActivity {
     //method to launch AuthenticationFragment
     private void launchAuthenticationFragment()
     {
-
         AuthenticationFragment authenticationFragment=new AuthenticationFragment();
         FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.constraint,authenticationFragment);
